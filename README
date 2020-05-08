@@ -1,0 +1,89 @@
+
+###################################################################################
+##                                LINUX											 
+###################################################################################
+
+Steps to add this repository to your local system.
+
+	1. Open a terminal window.
+
+	2. Change to the directory where you want to clone this repository. For example:
+
+		cd $FOAM_RUN
+
+	3. Execute the following command: 
+	
+		$ git clone https://github.com/Alejandro-FA/Giesekus.git
+
+
+Command to create a new branch.
+
+	$ git branch <name_of_the_new_branch>
+
+Check how many branches are there and current branch .
+
+	$ git branch
+
+Command to change to another brach.
+
+	$ git checkout <name_of_the_branch>
+
+
+Steps to update local changes to GitHub (collaborators only).
+
+	1. Stage new changes:
+		All changes (including untracked files):
+		$ git add -A
+
+		All changes (only modified files, RECOMMENDED):
+		$ git add -u
+
+		Only a specific file:
+		$ git add <path/to/file>
+
+	2. Commit new changes:
+
+		$ git commit -m "commit_message"
+
+	3. Send new changes to remote repository (GitHub):
+		
+		$ git push origin <current_branch_name>
+
+
+Command to discard unstaged changes (only one of them, or all of them, respectively):
+	
+	$ git checkout -- <path/to/file/to/revert>
+	$ git checkout -- .
+
+Command to see all new changes of the current branch:
+
+	$ git status
+
+Steps to merge <source_branch> to <target_branch> (<target_branch> will usually be master).
+
+	1. Change to <target_branch> (usually master):
+
+		$ git checkout <target_branch>
+
+	2. See the differences before merging:
+		
+		$ git diff <source_branch> <target_branch>
+
+	3. Merge changes:
+
+		$ git merge <source_branch>
+
+
+Command to delete local branch:
+
+	$ git branch -d <branch_name>
+
+Command to delete remote branch:
+
+	$ git push origin --delete <branch_name>
+
+Command to sync your local repository with GitHub (recommended to do before making any new changes).
+
+	$ git pull origin master
+
+
