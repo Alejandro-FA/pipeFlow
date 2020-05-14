@@ -22,19 +22,37 @@ boundaryField
 {
     inlet
     {
-        type            fixedValue;
-        value           uniform (0 0 0.05);
+        type uniformFixedValue;
+        uniformValue sine;
+        uniformValueCoeffs
+        {
+            amplitude 0.00742;
+	    	scale     (0 0 1);
+            frequency 5.9;
+            start     0;
+            level     (0 0 0);
+        }
     }
 
     outlet
     {
-        type            zeroGradient;
+		type uniformFixedValue;
+        uniformValue sine;
+        uniformValueCoeffs
+        {
+            amplitude 0.00742;
+	    	scale     (0 0 1);
+            frequency 5.9;
+            start     0;
+            level     (0 0 0);
+        }
     }
-
+	
     walls
     {
-        type            noSlip;
+		type noSlip;  
     }
+
 }
 
 // ************************************************************************* //
