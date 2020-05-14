@@ -45,4 +45,9 @@ timePrecision   10;
 
 runTimeModifiable true;
 
+functions
+{
+       #includeFunc singleGraph
+}
+
 // ************************************************************************* //
