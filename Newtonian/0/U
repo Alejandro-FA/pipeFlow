@@ -1,9 +1,9 @@
 /*--------------------------------*- C++ -*----------------------------------*\
   =========                 |
-  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
-   \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Version:  7
-     \\/     M anipulation  |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  7.0                                   |
+|   \\  /    A nd           | Website:  https://openfoam.org                  |
+|    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 FoamFile
 {
@@ -26,9 +26,9 @@ boundaryField
         uniformValue sine;
         uniformValueCoeffs
         {
-            amplitude 0.00742;
+            amplitude 0.00142;
 	    	scale     (0 0 1);
-            frequency 5.9;
+            frequency 2.26;
             start     0;
             level     (0 0 0);
         }
@@ -40,9 +40,9 @@ boundaryField
         uniformValue sine;
         uniformValueCoeffs
         {
-            amplitude 0.00742;
+            amplitude 0.00142;
 	    	scale     (0 0 1);
-            frequency 5.9;
+            frequency 2.26;
             start     0;
             level     (0 0 0);
         }
@@ -52,7 +52,6 @@ boundaryField
     {
 		type noSlip;  
     }
-
 }
 
 // ************************************************************************* //
