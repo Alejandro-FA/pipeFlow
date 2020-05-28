@@ -26,7 +26,7 @@ boundaryField
         uniformValue sine;
         uniformValueCoeffs
         {
-            amplitude 0.023198;
+            amplitude 0.0023198;
 	    	scale     (0 0 1);
             frequency 3.692;
             start     0;
@@ -40,7 +40,7 @@ boundaryField
         uniformValue sine;
         uniformValueCoeffs
         {
-            amplitude 0.023198;
+            amplitude 0.0023198;
 	    	scale     (0 0 1);
             frequency 3.692;
             start     0;
